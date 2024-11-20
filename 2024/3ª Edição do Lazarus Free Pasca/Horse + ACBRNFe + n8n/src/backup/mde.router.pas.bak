@@ -1,0 +1,54 @@
+unit mde.router;
+
+{$MODE DELPHI}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Horse, mde.service;
+
+type
+
+  { TMDE }
+
+  TMDE = class
+  public
+    class procedure MDE;
+  end;
+
+implementation
+
+{ TMDE }
+
+procedure postNFE(AReq: THorseRequest; ARes: THorseResponse);
+var
+ lService: TMDFe;
+ lCNPJ: String;
+begin
+
+  // Execulta o Request
+   aRes.ContentType('application/json')
+      .Send(lService.patchMDFeXML(lCNPJ));
+end;
+
+procedure pathXML(AReq: THorseRequest; ARes: THorseResponse);
+var
+ lService: TMDFe;
+ lCNPJ: String;
+begin
+
+  // Execulta o Request
+  aRes.ContentType('application/json')
+      .Send(lService.patchMDFeXML(lCNPJ));
+end;
+
+
+class procedure TMDE.MDE;
+begin
+  THorse.Group()
+        .POST('nfe', postNFE)
+        .Patch('nfe/xml', pathXML);
+end;
+
+end.
+

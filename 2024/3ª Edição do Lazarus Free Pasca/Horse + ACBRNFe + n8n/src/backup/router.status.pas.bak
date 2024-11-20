@@ -1,0 +1,13 @@
+unit router.status;
+
+{$MODE DELPHI}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+implementation
+
+end.
+

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
+    <Units>
+      <Unit>
+        <Filename Value="NFe.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="53" Y="22"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/status.router.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="5" Y="35"/>
+        <UsageCount Value="34"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/mde.service.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="73" Y="90"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/mde.router.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="57"/>
+        <CursorPos X="84" Y="81"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src/router.status.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="21" Y="3"/>
+        <UsageCount Value="19"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Componentes/acbr/Fontes/ACBrComum/ACBrUtil.Strings.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="50" Y="60"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../fpcdeluxe/lazarus/lazarus/lcl/widgetset/wschecklst.pp"/>
+        <UnitName Value="WSCheckLst"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="16" Y="16"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Componentes/acbr/Fontes/ACBrDFe/ACBrDFeOpenSSL.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="477"/>
+        <CursorPos Y="492"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Componentes/acbr/Fontes/ACBrDFe/ACBrDFe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="621"/>
+        <CursorPos Y="636"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <OtherDefines Count="2">
+      <Define0 Value="NoGUI"/>
+      <Define1 Value="horse_cgi"/>
+    </OtherDefines>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="107" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="108" Column="23" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="112" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="113" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="120" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="121" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="126" TopLine="102"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="98" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="99" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="105" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="107" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="108" Column="23" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="112" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="113" TopLine="90"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="120" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="121" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="123" TopLine="106"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.router.pas"/>
+        <Caret Line="100" Column="20" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="147" Column="34" TopLine="127"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="51" Column="15" TopLine="44"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="165" Column="46" TopLine="155"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="171" TopLine="155"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="179" TopLine="156"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="185" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="190" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="194" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="195" TopLine="172"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="197" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="201" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="src/mde.service.pas"/>
+        <Caret Line="203" TopLine="180"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

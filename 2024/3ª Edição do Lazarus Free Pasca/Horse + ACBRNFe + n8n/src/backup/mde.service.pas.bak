@@ -1,0 +1,95 @@
+unit mde.service;
+
+{$MODE DELPHI}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, DateUtils, LazUTF8, Jsons, ACBrUtil, ACBrDFe, ACBrNFe;
+
+type
+
+  { TMDFe }
+
+  TMDFe = class
+  private
+
+  public
+    constructor Create(aToken: string);
+    destructor Destroy; override;
+
+    function postMDFeNFe (aCNPJ: String): String;
+    function patchMDFeXML (aCNPJ: String): String;
+  end;
+
+implementation
+
+uses
+  pcnAuxiliar, pcnNFe, pcnConversao, pcnConversaoNFe, pcnNFeRTXT, pcnRetConsReciDFe,
+  pcnRetDistDFeInt, ACBrDFeConfiguracoes, ACBrDFeSSL, ACBrDFeOpenSSL, ACBrDFeUtil,
+  ACBrNFeNotasFiscais, ACBrNFeConfiguracoes;
+
+{ TMDFe }
+
+constructor TMDFe.Create(aToken: string);
+begin
+  // Cria
+end;
+
+function TMDFe.postMDFeNFe(aCNPJ: String): String;
+var
+  lNFe: TACBrNFe;
+begin
+  lNFe := TACBrNFe.Create(nil);
+  try
+    // Carrega Libs
+    lNFe.Configuracoes.Geral.SSLLib            := libOpenSSL;
+    lNFe.Configuracoes.Geral.SSLCryptLib       := cryOpenSSL;
+    lNFe.Configuracoes.Geral.SSLHttpLib        := httpOpenSSL;
+    lNFe.Configuracoes.Geral.SSLXmlSignLib     := xsLibXml2;
+
+    // Caminho dos arquivos
+    lNFe.Configuracoes.Arquivos.PathSchemas  := './Schemas/NFe';
+    lNFe.Configuracoes.Arquivos.Salvar       := True;
+    lNFe.Configuracoes.Arquivos.PathNFe      := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathInu      := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathSalvar   := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathEvento   := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+
+  finally
+    lNFe.Free;
+  end;
+end;
+
+function TMDFe.patchMDFeXML(aCNPJ: String): String;
+var
+  lNFe: TACBrNFe;
+begin
+  lNFe := TACBrNFe.Create(nil);
+  try
+    // Carrega Libs
+    lNFe.Configuracoes.Geral.SSLLib            := libOpenSSL;
+    lNFe.Configuracoes.Geral.SSLCryptLib       := cryOpenSSL;
+    lNFe.Configuracoes.Geral.SSLHttpLib        := httpOpenSSL;
+    lNFe.Configuracoes.Geral.SSLXmlSignLib     := xsLibXml2;
+
+    // Caminho dos arquivos
+    lNFe.Configuracoes.Arquivos.PathSchemas  := './Schemas/NFe';
+    lNFe.Configuracoes.Arquivos.Salvar       := True;
+    lNFe.Configuracoes.Arquivos.PathNFe      := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathInu      := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathSalvar   := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+    lNFe.Configuracoes.Arquivos.PathEvento   := ExtractFilePath(ParamStr(0))+'temp/'+aCNPJ;
+
+  finally
+    lNFe.Free;
+  end;
+end;
+
+destructor TMDFe.Destroy;
+begin
+  inherited Destroy;
+end;
+
+end.
+
